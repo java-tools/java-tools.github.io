@@ -29,13 +29,12 @@ prettify: true
 <h3>Unofficial Releases</h3>
 
 <p>Unofficial Maven Repository for unofficial releases based in the changes from
-<a href="https://code.google.com/p/primefaces/source/list">original <em>open source</em> repository</a>.</p>
+<a href="https://github.com/primefaces/primefaces/">original <em>open source</em> repository</a>.</p>
 
 <table id="unofficial-releases" class="table table-bordered table-hover">
   <thead>
     <tr>
       <th>Version</th>
-      <th>Base</th>
       <th>Resources</th>
       <th>Notes</th>
     </tr>
@@ -45,10 +44,9 @@ prettify: true
       {% capture full_version %}{{ release.version }}-{{ release.suffix }}{% endcapture %}
     <tr>
       <td>{{ release.version }}-{{ release.suffix }}</td>
-      <td><a href="{{ site.browse_source }}/primefaces/trunk?r={{ release.revision }}" title="{{ release.date_time | date_to_rfc822 }}">r{{ release.revision }}</a></td>
       <td>
-        <a href="{{ site.repo_url }}/org/primefaces/primefaces/{{ full_version }}/primefaces-{{ full_version }}.jar">Binary</a>
-        <a href="{{ site.repo_url }}/org/primefaces/primefaces/{{ full_version }}/primefaces-{{ full_version }}-sources.jar">Sources</a>
+        <a href="{{ site.repo_url }}/releases/org/primefaces/primefaces/{{ full_version }}/primefaces-{{ full_version }}.jar">Binary</a>
+        <a href="{{ site.repo_url }}/releases/org/primefaces/primefaces/{{ full_version }}/primefaces-{{ full_version }}-sources.jar">Sources</a>
       </td>
       <td><a href="/changelog/{{ release.version }}.html">ChangeLog</a></td>
     </tr>
@@ -60,9 +58,9 @@ prettify: true
 
 <pre class="prettyprint lang-xml">
 &lt;repository&gt;
-  &lt;id&gt;prime-github-repo&lt;/id&gt;
+  &lt;id&gt;java-tools-repo&lt;/id&gt;
   &lt;name&gt;Unofficial PrimeFaces Maven Repository&lt;/name&gt;
-  &lt;url&gt;http://primefaces.github.io/repository&lt;/url&gt;
+  &lt;url&gt;https://java-tools.github.io/repository/releases/&lt;/url&gt;
   &lt;layout&gt;default&lt;/layout&gt;
 &lt;/repository&gt;
 </pre>
