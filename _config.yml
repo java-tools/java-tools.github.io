@@ -1,7 +1,7 @@
 name: PrimeFaces
 pygments: false
 
-repo_url: https://java-tools.github.io/repository
+repo_url: https://java-tools.org/repository
 browse_source: https://github.com/primefaces/primefaces/tree/master/
 issue_tracker: https://github.com/primefaces/primefaces/issues/
 github_issue_tracker: https://github.com/primefaces/primefaces/issues/
